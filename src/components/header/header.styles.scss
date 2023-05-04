@@ -1,0 +1,113 @@
+.header {
+    background-color: rgb(32, 32, 32);
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+
+    .header-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding-left: 20px;
+
+        span {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: darkgoldenrod;
+        }
+    }
+
+    .header-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+
+        .header-icons {
+            display: flex;
+            margin-top: 20px;
+
+            span {
+                color: whitesmoke;
+                font-size: 2rem;
+                margin-right: 20px;
+
+                &:hover {
+                    animation: glitch-span 2s steps(100) infinite;
+                    cursor: pointer;
+                }
+
+                a {
+                    color: whitesmoke;
+                }
+            }
+            
+            @keyframes glitch-span {
+                2%{filter: drop-shadow(2px 0 0 white)}
+                4%{filter: drop-shadow(-2px 0 0 white)}
+                6%{filter: drop-shadow(3px 0 0 white)}
+                8%{filter: drop-shadow(-3px 0 0 white)}
+                10%{filter: drop-shadow(2px 0 0 white)}
+                12%{filter: drop-shadow(-2px 0 0 white)}
+                14%{filter: drop-shadow(4px 0 0 white)}
+                16%{filter: drop-shadow(-5px 0 0 white)}
+                18%{filter: drop-shadow(2px 0 0 white)}
+                20%{filter: drop-shadow(15px 0 0 white)}
+                22%{filter: drop-shadow(-15px 0 0 white)}
+                24%{filter: drop-shadow(-5px 0 0 white)}
+                26%{filter: drop-shadow(4px 0 0 white)}
+                28%{filter: drop-shadow(-4px 0 0 white)}
+                30%{filter: drop-shadow(6px 0 0 white)}
+                32%{filter: drop-shadow(-10px 0 0 white)}
+                34%{filter: drop-shadow(6px 0 0 white)}
+                36%{filter: drop-shadow(10px 0 0 white)}
+                38%{filter: drop-shadow(6px 0 0 white)}
+                40%{filter: drop-shadow(10px 0 0 white)}
+                42%{filter: drop-shadow(2px 0 0 white)}
+                44%{filter: drop-shadow(-2px 0 0 white)}
+                46%{filter: drop-shadow(3px 0 0 white)}
+                48%{filter: drop-shadow(-3px 0 0 white)}
+                50%{filter: drop-shadow(2px 0 0 white)}
+                52%{filter: drop-shadow(-2px 0 0 white)}
+                54%{filter: drop-shadow(4px 0 0 white)}
+                56%{filter: drop-shadow(-5px 0 0 white)}
+                58%{filter: drop-shadow(2px 0 0 white)}           
+              }
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .header {
+        background-color: rgb(32, 32, 32);
+        height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    
+        .header-info {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            padding-left: 20px;
+    
+            span {
+                font-size: 1.5rem;
+                font-weight: 500;
+                color: darkgoldenrod;
+            }
+        }
+    }
+
+}

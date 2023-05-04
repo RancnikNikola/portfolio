@@ -1,0 +1,139 @@
+.contact-container {
+    background-color: rgb(32, 32, 32);
+    padding: 20px;
+
+    .contact-title-container {
+        margin: 100px 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        h1 {
+            text-transform: uppercase;
+            font-size: 3.5rem;
+            color: rgb(75, 75, 75);
+            letter-spacing: 10px;
+            text-shadow: 2px 0 rgb(75, 75, 75);
+            font-weight: 900;
+        }
+        p {
+            text-transform: uppercase;
+            font-weight: bold;
+            color: goldenrod;
+            position: absolute;
+            letter-spacing: 2px;
+            font-weight: 800;
+        }
+    }
+
+    .contact-body {
+        display: flex;
+        justify-content: space-between;
+
+        .contact-info-wrapper {
+            flex: 1;
+
+            .contact-info {
+                width: 50%;
+                margin: 30px auto;
+                display: flex;
+                flex-direction: column;
+                background-color: rgb(75, 75, 75);
+                padding: 10px;
+                border-radius: 5px;
+    
+                .phone {
+                    display: flex;
+                    flex-direction: column;
+                    word-wrap: break-word;
+                    padding: 10px 0;
+                    text-transform: capitalize;
+    
+                    &:last-child {
+                        text-transform: lowercase;
+                    }
+    
+    
+                    span {
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        color: goldenrod;
+                        padding-left: 20px;
+                    }
+                    p {
+                        padding-left: 20px;
+                        margin: 10px 0;
+                        // color: rgb(75, 75, 75);
+                        color: whitesmoke;
+                        font-size: 0.9rem;
+    
+                   
+                    }
+                }
+            }
+        }
+
+        
+
+        .c-form {
+           flex: 2;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 900px) {
+    .contact-body {
+        flex-direction: column;
+
+        .contact-info-wrapper {
+
+            .contact-info {
+                width: 200px;
+                margin: 30px auto;
+                display: flex;
+                flex-direction: column;
+                background-color: rgb(216, 31, 31);
+                padding: 10px;
+                border-radius: 5px;
+    
+                .phone {
+                    display: flex;
+                    flex-direction: column;
+                    word-wrap: break-word;
+                    padding: 10px 0;
+                    text-transform: capitalize;
+    
+                    &:last-child {
+                        text-transform: lowercase;
+                    }
+    
+    
+                    span {
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        color: goldenrod;
+                        padding-left: 20px;
+                    }
+                    p {
+                        padding-left: 20px;
+                        margin: 10px 0;
+                        // color: rgb(75, 75, 75);
+                        color: whitesmoke;
+                        font-size: 0.9rem;
+    
+                   
+                    }
+                }
+            }
+        }
+
+        
+
+        .c-form {
+           flex: 2;
+        }
+    }
+}

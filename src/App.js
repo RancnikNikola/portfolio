@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState, useEffect } from "react";
+import NavigationBar from "./components/navigation/navigation.component";
+import Header from "./components/header/header.component";
+import About from "./pages/about/about.pages";
+import Projects from "./pages/projects/projects.pages";
+import Contact from "./pages/contact/contact.pages";
+import Footer from "./pages/footer/footer.component";
+import PageLoader from "./components/page-loader/page-loader.component";
 
-function App() {
+const App = () => {
+
+  const [ loading, setLoading ] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 4000);
+  }, []);
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  <>
+    {
+      loading ? <PageLoader /> : (
+
+        <>
+        <NavigationBar />
+        <Header />
+        <About />
+        <Projects />
+        <Contact />
+        <Footer />
+        </>
+      )
+    }
+  </>
+    
+  )
 }
 
 export default App;

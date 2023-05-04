@@ -1,0 +1,126 @@
+form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+    .form-inputs {
+        width: 100%;
+        display: flex;
+        
+        input {
+            flex: 48%;
+            margin: 20px 0;
+            border: none;
+            outline-style: none;
+            padding: 15px;
+            border-radius: 20px;
+            font-size: 1rem;
+            background-color: rgb(75, 75, 75);
+
+            &:first-child {
+                margin-right: 10px;
+            }
+        }
+    }
+
+    input {
+        margin-bottom: 20px;
+        padding: 15px;
+        border-radius: 20px;
+        border: none;
+        outline-style: none;
+        font-size: 1rem;
+        background-color: rgb(75, 75, 75);
+        color: whitesmoke;
+
+        &::placeholder {
+            color: whitesmoke;
+        }
+    }
+
+    textarea {
+        border: none;
+        outline-style: none;
+        border-radius: 20px;
+        height: 100px;
+        padding: 15px;
+        margin-bottom: 50px;
+        background-color: rgb(75, 75, 75);
+        color: whitesmoke;
+
+        &::placeholder {
+            color: whitesmoke;
+        }
+    }
+
+    .contact-btn {
+        position: absolute;
+        bottom: 0;
+    }
+
+    
+}
+
+@media only screen and (max-width: 900px) {
+    form {
+        display: flex;
+        flex-direction: column;
+        
+        .form-inputs {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin: 10px 0;
+            
+            input {
+                flex: 48%;
+                margin: 10px 0;
+                border: none;
+                outline-style: none;
+                padding: 15px;
+                border-radius: 20px;
+                font-size: 1rem;
+                background-color: rgb(75, 75, 75);
+    
+                &:first-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    
+        input {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 20px;
+            border: none;
+            outline-style: none;
+            font-size: 1rem;
+            background-color: rgb(75, 75, 75);
+            color: whitesmoke;
+    
+            &::placeholder {
+                color: whitesmoke;
+            }
+        }
+    
+        textarea {
+            border: none;
+            outline-style: none;
+            border-radius: 20px;
+            height: 100px;
+            padding: 15px;
+            background-color: rgb(75, 75, 75);
+            color: whitesmoke;
+    
+            &::placeholder {
+                color: whitesmoke;
+            }
+        }
+
+        .contact-btn {
+            width: 100%;
+        }
+    
+        
+    }
+}
