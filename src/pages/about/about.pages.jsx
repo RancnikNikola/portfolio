@@ -13,7 +13,7 @@ import {
     FaPhp,
     FaPython
 } from 'react-icons/fa';
-import pdf from '../../assets/files/Frontend-cv-hrv.pdf';
+import pdf from '../../assets/files/nikola-rancnik.pdf';
 import './about.styles.scss';
 
 const About = () => {
@@ -37,7 +37,7 @@ const About = () => {
                     </motion.p>
                     <div className='about-buttons'>
                         {/* <button>download cv</button> */}
-                        <a href={pdf} target="_blank" download="Frontend-cv-hrv.pdf">
+                        <a href={pdf} target="_blank" download="nikola-rancnik.pdf">
                             <GlitchButton text='Download CV' />
                         </a>
                         <Link to='#contact-form'>
