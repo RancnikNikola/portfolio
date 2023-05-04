@@ -23,12 +23,12 @@ const ContactForm = () => {
     const sendEmail = (e) => {
         e.preventDefault();
     
-        // emailjs.sendForm('service_w1kc7vh', 'template_ba69lul', form.current, 'MHaBSy1YgshyohH0p')
-        //   .then((result) => {
-        //       console.log(result.text);
-        //   }, (error) => {
-        //       console.log(error.text);
-        //   });
+        emailjs.sendForm('service_w1kc7vh', 'template_ba69lul', form.current, 'MHaBSy1YgshyohH0p')
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
 
           resetFormFields();
       };
